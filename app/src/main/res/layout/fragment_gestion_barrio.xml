@@ -1,0 +1,553 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="inca.jesus.alianza17.Fragments.FragmentGestionBarrio">
+
+
+
+    <LinearLayout
+        android:id="@+id/panel_barrio_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_lista_barrio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/panel_barrio_agregar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/blanco"
+    app:cardCornerRadius="15sp"
+    app:cardElevation="5dp"
+    android:layout_margin="20dp">
+
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="REGISTRO DE EVENTO:"
+            android:textColor="@color/negro"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_margin="5dp"/>
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="@color/colorPrimary"
+               android:layout_marginTop="5dp"
+               android:layout_marginBottom="5dp">
+
+           </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="Nombre:"
+                android:textColor="@color/negro"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/nom_barrio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/fecha_realizar_barrio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/negro"
+                android:gravity="center"
+                />
+
+            <ImageView
+                android:id="@+id/calendario_barrio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:src="@mipmap/ic_calendario"/>
+
+        </LinearLayout>
+
+
+         <android.support.v7.widget.CardView
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             app:cardBackgroundColor="@color/verde_bajo"
+             app:cardCornerRadius="15dp"
+             android:layout_margin="5dp">
+
+             <Button
+                 android:id="@+id/guardar_barrio_nuevo"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:text="GUARDAR"
+                 android:textColor="@color/blanco"
+                 android:textStyle="bold"
+                 android:background="@android:color/transparent"/>
+
+         </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/regresar_barrio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:textColor="@color/blanco"
+            android:background="@color/colorPrimary"
+            android:text="REGRESAR"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/panel_barrio_postulantes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:layout_margin="4dp"
+            app:cardBackgroundColor="@color/ColorAccent"
+            app:cardCornerRadius="15dp"
+            >
+            <Button
+                android:id="@+id/agregar_postulante_barrio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/blanco"
+                android:text="Agregar Postulante"
+                android:textStyle="bold"
+                android:background="@android:color/transparent"/>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_barrio_postulantes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+
+            >
+
+        </android.support.v7.widget.RecyclerView>
+        <LinearLayout
+            android:id="@+id/panel_vacio_barrio_postulante"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:layout_margin="4dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ColorAccent"
+                android:gravity="center"
+                android:text="Aún no tiene Datos Registrados!"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/mostrar_eventos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:textColor="@color/blanco"
+            android:text="MOSTRAR EVENTOS"
+            android:textStyle="bold"
+            android:background="@color/colorPrimary"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/panel_vacio_barrio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:layout_margin="4dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ColorAccent"
+            android:gravity="center"
+            android:text="Aún no tiene Datos Registrados!"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/panel_barrio_agregar_pos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="4dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Registro de Postulante:"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/ColorAccent"
+            android:layout_weight="10"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ColorAccent">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="N° Inscripción:"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/barrio_insc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="Nombres:"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/barrio_nom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="Apellidos:"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/barrio_ape"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:text="Fecha de Nacimiento:"
+                        android:textSize="10dp"
+                        android:gravity="center"
+                        android:textColor="@color/ColorAccent"/>
+                    <TextView
+                        android:id="@+id/barrio_fecha_nac"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:gravity="center"
+                        android:textSize="10sp"
+                        android:textColor="@color/negro"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/fecha_naci_barrio_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:src="@mipmap/ic_calendario"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="Domicilio:"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/barrio_domi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="Localidad:"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/barrio_loca"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="Telefono:"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/barrio_tele"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="Email:"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/barrio_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="textEmailAddress"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="Posicion:"
+                    android:gravity="center"/>
+
+                <Spinner
+                    android:id="@+id/barrio_pos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_margin="4dp">
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp"
+                    android:layout_margin="6dp">
+
+                    <Button
+                        android:id="@+id/boton_regresar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/blanco"
+                        android:text="REGRESAR"
+                        android:background="@android:color/transparent"/>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/verde_bajo"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp"
+                    android:layout_margin="6dp">
+
+                    <Button
+                        android:id="@+id/boton_guardar_postulante"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/blanco"
+                        android:text="GUARDAR"
+                        android:background="@android:color/transparent"/>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

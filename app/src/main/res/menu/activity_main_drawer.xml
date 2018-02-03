@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <item android:id="@+id/nav_1" android:icon="@mipmap/ic_menu_casa"
+            android:title="Inicio"
+            android:checkable="true" />
+
+    <item android:title="MODULO CAPTACIÓN:"
+        android:id="@+id/menu_modulo_captacion">
+        <menu>
+            <item android:id="@+id/nav_3" android:icon="@mipmap/ic_menu_captacion"
+                android:title="Evaluacion Captación"
+                android:checkable="true"/>
+            <item android:id="@+id/nav_seg_pos" android:icon="@mipmap/ic_menu_seguimiento"
+                android:title="Seguimiento Postulante"
+                android:checkable="true"/>
+
+            <item android:id="@+id/nav_reporte_cap" android:icon="@mipmap/ic_menu_estadistico"
+                android:title="Reporte Captación"
+                android:checkable="true"/>
+
+            <item android:id="@+id/nav_4" android:icon="@mipmap/ic_menu_barrio"
+                android:title="Barrio Intimo"
+                android:checkable="true"/>
+
+        </menu>
+    </item>
+
+    <item android:title="MODULO ESTADISTICO:"
+        android:id="@+id/menu_modulo_estadistico">
+        <menu>
+            <item android:id="@+id/nav_5" android:icon="@mipmap/ic_menu_estadistico"
+                android:title="Estadisticos"
+                android:checkable="true"/>
+        </menu>
+    </item>
+   <!--
+    <item android:title="MODULO MANTENIMIENTO:"
+        android:id="@+id/menu_modulo_mantenimiento"
+        android:visible="false">
+        <menu>
+            <item android:id="@+id/mant_usuario" android:icon="@mipmap/ic_menu_usuarios"
+                android:title="Usuarios"
+                android:checkable="true"
+                />
+            <item android:id="@+id/mant_perfiles" android:icon="@mipmap/ic_menu_perfil"
+                android:title="Perfiles"
+                android:checkable="true"
+                />
+            <item android:id="@+id/mant_categorias" android:icon="@mipmap/ic_menu_categoria"
+                android:title="Categorias"
+                android:checkable="true"
+                />
+            <item android:id="@+id/mant_jugadores" android:icon="@mipmap/ic_menu_jugadores"
+                android:title="Jugadores"
+                android:checkable="true"
+                />
+            <item android:id="@+id/mant_eventos_barrio" android:icon="@mipmap/ic_menu_campeo"
+                android:title="Campeonatos"
+                android:checkable="true"
+                />
+            <item android:id="@+id/mant_mis_equipos" android:icon="@mipmap/ic_menu_equipos"
+                android:title="Mis Equipos"
+                android:checkable="true"
+                />
+            <item android:id="@+id/mant_barrio" android:icon="@mipmap/ic_menu_campeo"
+                android:title="Barrio Intimo -Mant"
+                android:checkable="true"
+                />
+        </menu>
+    </item> -->
+
+        <item android:id="@+id/nav_salir" android:icon="@mipmap/ic_menu_power"
+            android:title="Cerrar Sesión"
+            android:checkable="true" />
+
+</menu>

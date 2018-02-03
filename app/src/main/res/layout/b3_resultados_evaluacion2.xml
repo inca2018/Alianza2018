@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blanco">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/morado_bajo"
+        android:backgroundTint="@color/morado_bajo"
+        app:cardCornerRadius="30dp"
+        android:layout_margin="20dp"
+        app:cardElevation="10dp"
+        android:layout_gravity="center"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="2dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:layout_gravity="center">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COMPETENCIA:"
+                android:textColor="@color/blanco"
+                android:textStyle="bold"
+                android:layout_margin="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RIVAL:"
+                android:textColor="@color/blanco"
+                android:textStyle="bold"
+                android:layout_margin="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GOLES:"
+                android:textColor="@color/blanco"
+                android:textStyle="bold"
+                android:layout_margin="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TIEMPO JUGADO:"
+                android:textColor="@color/blanco"
+                android:textStyle="bold"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CANTIDAD DE P:"
+                android:textColor="@color/blanco"
+                android:textStyle="bold"
+                android:layout_margin="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CANTIDAD DE R:"
+                android:textColor="@color/blanco"
+                android:textStyle="bold"
+                android:layout_margin="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CANTODAD DE PG:"
+                android:textColor="@color/blanco"
+                android:textStyle="bold"
+                android:layout_margin="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CANTIDAD DE DR:"
+                android:textColor="@color/blanco"
+                android:textStyle="bold"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOTAL:"
+                android:textColor="@color/blanco"
+                android:textStyle="bold"
+                android:layout_margin="5dp"/>
+
+
+        </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_weight="1"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COMPETENCIA:"
+        android:textColor="@color/blanco"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:id="@+id/r_comp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RIVAL:"
+        android:textColor="@color/blanco"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:id="@+id/r_rival"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/blanco"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:id="@+id/r_goles"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/blanco"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:id="@+id/r_t_jugado"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/blanco"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:id="@+id/total_p"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/blanco"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:id="@+id/total_r"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/blanco"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:id="@+id/total_pg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/blanco"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:id="@+id/total_dr"/>
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/blanco"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:id="@+id/r_total"/>
+
+      </LinearLayout>
+    </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/verde_bajo"
+            android:backgroundTint="@color/verde_bajo"
+            app:cardCornerRadius="30dp"
+            android:layout_margin="20dp"
+            app:cardElevation="10dp"
+            android:layout_gravity="center"
+            >
+        <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <Button
+        android:id="@+id/btingre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="0.50"
+        android:backgroundTint="@android:color/transparent"
+        android:background="@android:color/transparent"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:onClick="grabar_ev2"
+        android:text="GRABAR RESULTADO"
+        android:textColor="@color/fb"
+        android:textStyle="bold"
+        tools:ignore="ButtonStyle"
+        android:drawableRight="@drawable/ic_boton_guardar_datos"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        />
+
+          </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>
+
+
+
+</LinearLayout>

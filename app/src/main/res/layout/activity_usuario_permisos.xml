@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fb"
+    tools:context="inca.jesus.alianza17.Activities.UsuarioPermisos">
+
+    <include layout="@layout/toolbar_seguimiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7.5"
+            app:cardBackgroundColor="@color/blanco"
+            android:layout_margin="4dp"
+            app:cardCornerRadius="15dp"
+            android:elevation="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Datos del Usuario"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="Usuario:"
+                    android:textColor="@color/negro"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/permiso_nom_usuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Jesus Vicente Inca Cardenas "
+                    android:textColor="@color/negro"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        app:cardBackgroundColor="@color/blanco"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Permisos del Usuario"
+                android:textColor="@color/colorPrimary"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Editar Usuarios del Sistema"
+                android:gravity="fill_vertical"
+                android:textColor="@color/negro"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Eliminar Usuarios del Sistema"
+                android:gravity="fill_vertical"
+                android:textColor="@color/negro"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Editar Usuarios del Sistema"
+                android:gravity="fill_vertical"
+                android:textColor="@color/negro"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Editar Usuarios del Sistema"
+                android:gravity="fill_vertical"
+                android:textColor="@color/negro"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Editar Usuarios del Sistema"
+                android:gravity="fill_vertical"
+                android:textColor="@color/negro"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Editar Usuarios del Sistema"
+                android:gravity="fill_vertical"
+                android:textColor="@color/negro"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Editar Usuarios del Sistema"
+                android:gravity="fill_vertical"
+                android:textColor="@color/negro"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Editar Usuarios del Sistema"
+                android:gravity="fill_vertical"
+                android:textColor="@color/negro"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center">
+                <CheckBox
+                    android:id="@+id/c_opcion1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center">
+                <CheckBox
+                    android:id="@+id/c_opcion2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center">
+                <CheckBox
+                    android:id="@+id/c_opcion3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center">
+                <CheckBox
+                    android:id="@+id/c_opcion4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center">
+                <CheckBox
+                    android:id="@+id/c_opcion5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center">
+                <CheckBox
+                    android:id="@+id/c_opcion6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center">
+                <CheckBox
+                    android:id="@+id/c_opcion7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center">
+                <CheckBox
+                    android:id="@+id/c_opcion8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+     </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="4dp">
+
+            <Button
+                android:id="@+id/permiso_btn_guardar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Guardar Permisos"
+                android:textAllCaps="false"
+                android:textColor="@color/blanco"
+                android:background="@android:color/transparent"
+                />
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

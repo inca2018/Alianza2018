@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar_seguimiento"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            tools:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            tools:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/toolbar_boton_volver30"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:src="@drawable/ic_boton_regresar"
+                    />
+                <TextView
+                    android:id="@+id/toolbar_titulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="EVALUACIONES"
+                    android:textSize="15dp"
+                    android:textColor="@color/blanco"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/blanco">
+
+        <Button
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:text="Prueba Fisica"
+            android:textSize="25dp"
+            android:padding="15dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/ColorAccent"
+            android:layout_margin="4dp"
+            android:textAlignment="center"
+            android:drawableLeft="@drawable/icon_fisico"
+            android:onClick="prueba_fisica"
+            android:drawableTint="@color/ColorAccent"
+            />
+        <Button
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:text="Prueba Técnica"
+            android:textSize="25dp"
+            android:padding="15dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/ColorAccent"
+            android:layout_margin="4dp"
+            android:textAlignment="center"
+            android:drawableLeft="@drawable/icon_tactico"
+            android:drawableTint="@color/ColorAccent"
+            android:onClick="prueba_tecnica"/>
+        <Button
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:text="Diagnostico"
+            android:textSize="25dp"
+            android:padding="15dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/ColorAccent"
+            android:layout_margin="4dp"
+            android:textAlignment="center"
+            android:drawableLeft="@drawable/icon_diagnostico"
+            android:onClick="prueba_diagnostico"
+            android:drawableTint="@color/ColorAccent"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15sp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/verde_bajo">
+        <Button
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:text="Resultados"
+            android:textSize="25dp"
+            android:padding="15dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/blanco"
+            android:layout_margin="4dp"
+            android:textAlignment="center"
+            android:drawableLeft="@drawable/result"
+            android:onClick="resultados"
+            android:drawableTint="@color/blanco"/>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</LinearLayout>

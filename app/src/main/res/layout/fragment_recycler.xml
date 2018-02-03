@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lista_eventos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="10dp"
+        card_view:cardCornerRadius="10dp"
+        android:layout_margin="3dp"
+
+        />
+</LinearLayout>

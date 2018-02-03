@@ -1,0 +1,117 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="10dp"
+    card_view:cardUsedCompatPadding="true"
+    card_view:elevation="20dp"
+    card_view:cardCornerRadius="50dp"
+    android:layout_weight="0.10"
+    android:backgroundTint="@color/fb"
+    android:layout_margin="90dp"
+    app:cardBackgroundColor="@color/fb"
+    app:cardCornerRadius="15sp"
+    app:cardElevation="15sp"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorSecundario"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/info2_nombress"
+            android:text="Nombres de Jugador Registrado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/blanco"
+            android:elevation="1dp" />
+        <TextView
+            android:text="Ape de Jugador"
+            android:id="@+id/info2_apellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:textSize="12dp"
+            android:textAlignment="center"
+            android:textColor="@color/blanco"/>
+        <TextView
+            android:text="Fecha de Jugador"
+            android:id="@+id/info2_fecha_nac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:textSize="12dp"
+            android:textAlignment="center"
+            android:textColor="@color/blanco"/>
+
+        <TextView
+            android:text="Lugar de Jugador"
+            android:id="@+id/info2_residencias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:textColor="@color/blanco"
+            />
+        <TextView
+            android:text="telefono"
+            android:id="@+id/info2_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:textColor="@color/blanco"
+            />
+        <TextView
+            android:text="correo Jugador"
+            android:id="@+id/info2_correoo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:textColor="@color/blanco"
+            />
+        <TextView
+            android:text="Liga de Jugador"
+            android:id="@+id/info_liga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:textColor="@color/blanco"
+            />
+        <TextView
+            android:text="categoria de Jugador"
+            android:id="@+id/info_categoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:textColor="@color/blanco"
+            />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

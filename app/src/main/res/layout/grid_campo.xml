@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorSecundario">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linear_campo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/altura"
+            android:orientation="vertical"
+            android:background="@drawable/cancha_alianza"
+            android:layout_margin="10dp"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/ev2_campo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                />
+
+          </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Limpiar Campos"
+                            android:textColor="@color/blanco"
+                            android:textSize="16sp"
+                            android:textAlignment="textEnd"
+                            android:textStyle="bold"
+                            android:padding="10dp"/>
+
+                        <ImageView
+                            android:id="@+id/btn_vaciar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:src="@drawable/ic_boton_vaciar_datos"/>
+                    </LinearLayout>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/morado_bajo"
+                        android:backgroundTint="@color/morado_bajo"
+                        app:cardBackgroundColor="@color/morado_bajo"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="5dp"
+                        android:layout_margin="6dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="5dp">
+
+                            <Button
+                                android:id="@+id/btn_eva2_soc"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="SOCIAL"
+                                android:textStyle="bold"
+                                android:textSize="18sp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:textColor="@color/blanco"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="2"
+                                >
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Puntaje:"
+                                    android:textStyle="bold"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/blanco"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textSize="30dp"
+                                    android:textStyle="bold"
+                                    android:textAlignment="center"
+                                    android:id="@+id/pto_total1"
+                                    android:textColor="@color/blanco"/>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/morado_bajo"
+                        android:backgroundTint="@color/morado_bajo"
+                        app:cardCornerRadius="30dp"
+                        app:cardBackgroundColor="@color/morado_bajo"
+                        app:cardElevation="5dp"
+                        android:layout_margin="6dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="5dp">
+
+                            <Button
+                                android:id="@+id/btn_eva2_psico"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="PSICOLOGICO"
+                                android:textStyle="bold"
+                                android:textSize="18sp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:textColor="@color/blanco"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="2"
+                                >
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Puntaje:"
+                                    android:textStyle="bold"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/blanco"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textSize="30dp"
+                                    android:textStyle="bold"
+                                    android:textAlignment="center"
+                                    android:id="@+id/pto_total2"
+                                    android:textColor="@color/blanco"/>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5dp">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardBackgroundColor="@color/deep_naranja900"
+                        app:cardCornerRadius="30dp"
+                        android:layout_margin="10dp"
+                        app:cardElevation="10dp"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_margin="10dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColorHint="@color/blanco">
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/torneo"
+                                    android:inputType="text"
+                                    android:hint="Competencia"
+                                    android:textColor="@color/blanco"
+                                    android:textColorHighlight="@color/blanco"
+                                    android:textColorHint="@color/blanco"
+                                    android:textColorLink="@color/blanco"
+                                    />
+                            </android.support.design.widget.TextInputLayout>
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColorHint="@color/blanco">
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/rival"
+                                    android:inputType="text"
+                                    android:hint="Rival"
+                                    android:textColor="@color/blanco"
+                                    android:textColorLink="@color/blanco"
+                                    android:textColorHint="@color/blanco"/>
+                            </android.support.design.widget.TextInputLayout>
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColorHint="@color/blanco">
+                                <EditText
+                                    android:enabled="false"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/goles"
+                                    android:inputType="number"
+                                    android:maxLength="2"
+                                    android:hint="Goles Marcados"
+                                    android:textColor="@color/blanco"
+                                    android:textColorLink="@color/blanco"
+                                    android:textColorHint="@color/blanco"
+                                    android:textColorHighlight="@color/blanco"/>
+                            </android.support.design.widget.TextInputLayout>
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColorHint="@color/blanco">
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/t_jugado"
+                                    android:inputType="number"
+                                    android:hint="Tiempo Jugado"
+                                    android:textColor="@color/blanco"
+                                    android:textColorHint="@color/blanco"
+                                    android:textColorHighlight="@color/blanco"
+                                    android:textColorLink="@color/blanco"/>
+                            </android.support.design.widget.TextInputLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_gravity="center_horizontal"
+                                    android:paddingLeft="50dp"
+                                    >
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="TITULAR"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/blanco"
+                                        android:layout_margin="8dp"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="CAPITAN"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/blanco"
+                                        android:layout_margin="8dp"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <CheckBox
+                                        android:id="@+id/titular"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:shadowColor="@color/blanco"
+                                        />
+
+                                    <CheckBox
+                                        android:id="@+id/capitan"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:shadowColor="@color/blanco"/>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center"
+                                android:gravity="center">
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/verde_bajo"
+                                    android:backgroundTint="@color/verde_bajo"
+                                    app:cardBackgroundColor="@color/verde_bajo"
+                                    app:cardCornerRadius="10dp"
+                                    app:cardElevation="5dp"
+                                    android:layout_margin="4dp">
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="CALCULAR PUNTAJE"
+                                        android:id="@+id/btn_calcular_puntos"
+                                        android:onClick="calcular_puntos"
+                                        android:textColor="@color/blanco"
+                                        android:elevation="2dp"
+                                        android:textStyle="bold"
+                                        android:background="@android:color/transparent"
+                                        android:backgroundTint="@android:color/transparent"
+                                       />
+                                </android.support.v7.widget.CardView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="PUNTOS"
+                                    android:textStyle="bold"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="100"/>
+
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

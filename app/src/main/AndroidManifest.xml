@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="inca.jesus.alianza17">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".Activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>q
+        </activity>
+        <activity android:name=".Activities.Activity_Login">
+
+            </activity>
+        <activity android:name=".Activities.Activity_Principal">
+
+        </activity>
+        <activity android:name=".Activities.A1_Evaluacion" />
+        <activity android:name=".Activities.A2_RegistroDeportista" />
+        <activity android:name=".DialogAptitudes.S_dialog_capacidad" />
+        <activity android:name=".DialogAptitudes.S_dialog_fisico" />
+        <activity android:name=".DialogAptitudes.S_dialog_psicologico" />
+        <activity android:name=".DialogAptitudes.S_dialog_social" />
+        <activity android:name=".DialogAptitudes.S_dialog_tecnico" />
+        <activity
+            android:name=".Activities.B1_ListaSeguimiento"
+            android:parentActivityName=".Activities.Activity_Principal" />
+        <activity
+            android:name=".Activities.B2_Evaluacion2"
+            android:parentActivityName=".Activities.B1_ListaSeguimiento"
+            android:screenOrientation="landscape" />
+        <activity android:name=".Activities.B3_ResultadosEvaluacion2" />
+        <activity android:name=".DialogAptitudes.S_dialog_social2"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".DialogAptitudes.S_dialog_psicologico2"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Activities.C1_ListaPostulantes" />
+        <activity android:name=".Activities.C2_ListaOpciones" />
+        <activity android:name=".Activities.B_A4_1_PruebaFisica" />
+        <activity android:name=".Activities.B_A4_1_PruebaTecnico" />
+        <activity android:name=".Activities.B_A4_Diagnostico" />
+        <activity android:name=".Dialog.B_dialog_fisico" />
+        <activity android:name=".Dialog.B_dialog_capacidad" />
+        <activity android:name=".Dialog.B_dialog_social" />
+        <activity android:name=".Dialog.B_dialog_tecnico" />
+        <activity android:name=".Dialog.B_dialog_psicologico" />
+        <activity android:name=".Activities.B_A4_1_Resultados" />
+        <activity android:name=".Activities.ListaCategoriasPlantel" />
+        <activity android:name=".Activities.CategoriaListaJugadores" />
+        <activity android:name=".Activities.MisEquiposCreados" />
+        <activity android:name=".Activities.CreacionEquipo" />
+        <activity
+            android:name=".Activities.EditarEquipo"
+            android:screenOrientation="landscape" />
+        <activity android:name=".Activities.NombreMiEquipo" />
+        <activity
+            android:name=".Activities.PruebaEstadistica"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".Activities.TestImagenes"></activity>
+    </application>
+
+</manifest>

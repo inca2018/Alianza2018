@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_valorar__habilidad"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blanco"
+    tools:context=".Activities.A1_Evaluacion"
+
+    >
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar_seguimiento"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            tools:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            tools:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/toolbar_boton_volver"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:src="@drawable/ic_boton_regresar"
+                    />
+                <TextView
+                    android:id="@+id/toolbar_titulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="EVALUACIÓN APTITUDES"
+                    android:textSize="20dp"
+                    android:textColor="@color/blanco"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:textStyle="bold"/>
+                <ImageView
+                    android:id="@+id/toolbar_boton_vaciar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:src="@drawable/ic_boton_vaciar_datos"
+                    />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/morado_bajo"
+            android:backgroundTint="@color/morado_bajo"
+            app:cardCornerRadius="30dp"
+            android:layout_margin="3dp"
+            app:cardElevation="5dp"
+            >
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="4dp">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="FISICO"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:id="@+id/btn_fisico2"
+                android:onClick="fisico"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:textColor="@color/blanco"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Puntaje:"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/blanco"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:id="@+id/pto_fisico"
+                    android:textColor="@color/blanco"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/morado_bajo"
+            android:backgroundTint="@color/morado_bajo"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="3dp"
+            android:layout_margin="6dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="4dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CAPACIDAD DE JUEGO"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:id="@+id/btn_capacidad2"
+                android:background="@android:color/transparent"
+                android:textColor="@color/blanco"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Puntaje:"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/blanco"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:id="@+id/pto_capacidad"
+                    android:textColor="@color/blanco"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/morado_bajo"
+            android:backgroundTint="@color/morado_bajo"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="3dp"
+            android:layout_margin="6dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <Button
+                android:id="@+id/btn_social2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="SOCIAL"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:textColor="@color/blanco"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="2"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Puntaje:"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/blanco"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:id="@+id/pto_social"
+                    android:textColor="@color/blanco"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/morado_bajo"
+            android:backgroundTint="@color/morado_bajo"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="3dp"
+            android:layout_margin="6dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="TECNICO"
+                android:id="@+id/btn_tecnico2"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:background="@android:color/transparent"
+                android:textColor="@color/blanco"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Puntaje:"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/blanco"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:id="@+id/pto_tecnico"
+                    android:textColor="@color/blanco"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/morado_bajo"
+            android:backgroundTint="@color/morado_bajo"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="3dp"
+            android:layout_margin="6dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="PSICOLOGICO"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:id="@+id/btn_psicologico2"
+                android:background="@android:color/transparent"
+                android:textColor="@color/blanco"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Puntaje:"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/blanco"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:id="@+id/pto_psicolo"
+                    android:textColor="@color/blanco"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_continuar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/verde_bajo"
+        android:background="@color/verde_bajo"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="5dp"
+        android:layout_margin="10dp">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_margin="5dp">
+
+        <Button
+            android:id="@+id/EvaluarID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/fb"
+            android:onClick="evaluar_jugador"
+            android:text="Continuar"
+            android:textColor="@color/blanco"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total:"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/blanco"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:id="@+id/total_ptos"
+                android:textColor="@color/blanco"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:textColor="@color/colorSecundario"
+         android:layout_margin="20dp"
+         android:textAlignment="textStart"
+         android:textStyle="bold"
+         android:inputType="textMultiLine"
+         android:text="Nota: La Evaluación debe ser mayor de 50 Ptos.     para poder continuar."/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

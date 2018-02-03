@@ -1,0 +1,241 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/blanco"
+    tools:context="inca.jesus.alianza17.Fragments.FragmentCategorias">
+
+    <LinearLayout
+        android:id="@+id/modulo_recycler_categorias"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="4dp"
+        android:visibility="gone"
+        >
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_mant_cate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/modulo_recycler_jugadores"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="8"
+          android:orientation="horizontal">
+
+          <android.support.v7.widget.CardView
+              android:id="@+id/card_agregar_jugador"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              app:cardBackgroundColor="@color/ColorPrimaryDark"
+              app:cardCornerRadius="4dp"
+              android:layout_margin="2dp"
+              android:elevation="10dp">
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:text="Agregar Jugador"
+                  android:gravity="center"
+                  android:textColor="@color/blanco"/>
+          </android.support.v7.widget.CardView>
+          <android.support.v7.widget.CardView
+              android:id="@+id/card_reg_jugador"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              app:cardBackgroundColor="@color/deep_naranja400"
+              app:cardCornerRadius="4dp"
+              android:layout_margin="2dp"
+              android:elevation="10dp">
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:text="Registrar Jugador"
+                  android:gravity="center"
+                  android:textColor="@color/blanco"/>
+          </android.support.v7.widget.CardView>
+
+
+      </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_lista_jugadores_x_categorias"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </android.support.v7.widget.RecyclerView>
+        <Button
+            android:id="@+id/btn_regreso_categoria"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:background="@color/ColorAccent"
+            android:text="Mostrar Categorias"
+            android:textAllCaps="false"
+            android:elevation="10dp"
+            android:textColor="@color/blanco"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/modulo_nueva_categoria"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="4dp"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/blanco"
+            app:cardCornerRadius="15dp"
+            android:elevation="4dp"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nueva Categoria:"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="4dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:orientation="vertical"
+                    android:background="@color/colorPrimary"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.6"
+                        android:text="Nombre de Categoria:"
+                        android:layout_margin="8dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/negro"
+                        android:gravity="center"/>
+                    <EditText
+                        android:id="@+id/categoria_nuevo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp"/>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="15dp"
+                    android:layout_margin="10dp">
+
+                    <Button
+                        android:id="@+id/categoria_nuevo_guardar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Guardar"
+                        android:textColor="@color/blanco"
+                        android:background="@android:color/transparent"/>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/modulo_agregar_jugadores_a_lista"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Seleccione Jugadores para agregar"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/negro"
+                android:gravity="center"/>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_seleccion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </android.support.v7.widget.RecyclerView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="8">
+            <android.support.v7.widget.CardView
+                android:id="@+id/regreso_lista_juga"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:layout_margin="2dp"
+                app:cardBackgroundColor="@color/blanco"
+                app:cardCornerRadius="4dp"
+                android:elevation="20dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_icon_atras"/>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_jesus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardCornerRadius="4dp"
+                android:layout_margin="2dp"
+                android:elevation="20dp"
+                app:cardBackgroundColor="@color/colorPrimary">
+
+                <Button
+                    android:id="@+id/card_jesus2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:text="GUARDAR"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:textColor="@color/blanco"/>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

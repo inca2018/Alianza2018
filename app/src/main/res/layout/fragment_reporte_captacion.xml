@@ -1,0 +1,934 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="inca.jesus.alianza17.Fragments.FragmentReporteCaptacion">
+
+   <android.support.v7.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_weight="4"
+       app:cardBackgroundColor="@color/blanco"
+       app:cardCornerRadius="15dp"
+       app:cardElevation="5dp"
+       android:layout_margin="4dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="SELECCION POSTULANTE:"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary">
+
+        </LinearLayout>
+        <Spinner
+            android:id="@+id/sp_postulantes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/borde_spinner">
+        </Spinner>
+
+    </LinearLayout>
+   </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="4dp"
+        app:cardBackgroundColor="@color/blanco"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/op_fisico"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="4dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="FISICO"
+                                android:gravity="fill_vertical"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="@color/negro"/>
+                            <TextView
+                                android:id="@+id/ted1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:text="10 Ptos."
+                                android:gravity="center"
+                                android:textColor="@color/negro"
+                                android:textStyle="bold"
+                                android:textSize="18sp"/>
+                        </LinearLayout>
+
+
+                        <ImageView
+                            android:id="@+id/im_fisico"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="8"
+                            android:src="@mipmap/ic_op_abajo"
+                            android:tint="@color/colorPrimary"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/op_fisico2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="4dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="6dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="1.- Estatura Según Posición :"
+                                android:textSize="8sp"/>
+                            <TextView
+                                android:id="@+id/res1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="10 Ptos"
+                                android:textSize="10sp"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="6dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="2.- Peso Según Posición :"
+                                android:textSize="8sp"/>
+                            <TextView
+                                android:id="@+id/res2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="10 Ptos"
+                                android:textSize="10sp"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="6dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="3.- Técnica de Carrera :"
+                                android:textSize="8sp"/>
+                            <TextView
+                                android:id="@+id/res3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="10 Ptos"
+                                android:textSize="10sp"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="6dp">
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="4.- Posición del Talón :"
+                                android:textSize="8sp"/>
+                            <TextView
+                                android:id="@+id/res4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="10 Ptos"
+                                android:textSize="10sp"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="6dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="5.- Aceleración :"
+                                android:textSize="8sp"/>
+                            <TextView
+                                android:id="@+id/res5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="10 Ptos"
+                                android:textSize="10sp"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="6dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="6.- Potencia :"
+                                android:textSize="8sp"/>
+                            <TextView
+                                android:id="@+id/res6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="10 Ptos"
+                                android:textSize="10sp"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="6dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="7.- Resistencia :"
+                                android:textSize="8sp"/>
+                            <TextView
+                                android:id="@+id/res7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="10 Ptos"
+                                android:textSize="10sp"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/op_capa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="CAPACIDAD DE JUEGO"
+                                android:gravity="fill_vertical"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="@color/negro"/>
+                            <TextView
+                                android:id="@+id/ted2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:text="10 Ptos."
+                                android:gravity="center"
+                                android:textColor="@color/negro"
+                                android:textStyle="bold"
+                                android:textSize="18sp"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/im_capa"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="8"
+                            android:src="@mipmap/ic_op_abajo"
+                            android:tint="@color/colorPrimary"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/op_capa2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="4dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="6dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="1.- Percepción e Interpretación:"
+                                android:textSize="8sp"/>
+                            <TextView
+                                android:id="@+id/res8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="10 Ptos"
+                                android:textSize="10sp"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="6dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="2.- Toma de Decisiones :"
+                                android:textSize="8sp"/>
+                            <TextView
+                                android:id="@+id/res9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="10 Ptos"
+                                android:textSize="10sp"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="6dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="3.- Inteligencia Táctica -Posicionamiento :"
+                                android:textSize="8sp"/>
+                            <TextView
+                                android:id="@+id/res10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="10 Ptos"
+                                android:textSize="10sp"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="6dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="4.- Visión de Juego :"
+                                android:textSize="8sp"/>
+                            <TextView
+                                android:id="@+id/res11"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="10 Ptos"
+                                android:textSize="10sp"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/op_so"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="SOCIAL"
+                                android:gravity="fill_vertical"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="@color/negro"/>
+                            <TextView
+                                android:id="@+id/ted3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:text="10 Ptos."
+                                android:gravity="center"
+                                android:textColor="@color/negro"
+                                android:textStyle="bold"
+                                android:textSize="18sp"/>
+
+                        </LinearLayout>
+
+
+                        <ImageView
+                            android:id="@+id/im_so"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="8"
+                            android:src="@mipmap/ic_op_abajo"
+                            android:tint="@color/colorPrimary"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/op_so2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="4dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="6dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="1.- Actitud ante el Adversario :"
+                                android:textSize="8sp"/>
+                            <TextView
+                                android:id="@+id/res12"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="10 Ptos"
+                                android:textSize="10sp"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="6dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="2.- Actitud con Compañeros :"
+                                android:textSize="8sp"/>
+                            <TextView
+                                android:id="@+id/res13"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="10 Ptos"
+                                android:textSize="10sp"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="6dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="3.- Actitud con el arbitro :"
+                                android:textSize="8sp"/>
+                            <TextView
+                                android:id="@+id/res14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="10 Ptos"
+                                android:textSize="10sp"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="6dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="4.- Actitud con el Público :"
+                                android:textSize="8sp"/>
+                            <TextView
+                                android:id="@+id/res15"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="10 Ptos"
+                                android:textSize="10sp"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/op_tec"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="4dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="TECNICO"
+                                android:gravity="fill_vertical"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="@color/negro"/>
+                            <TextView
+                                android:id="@+id/ted4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:text="10 Ptos."
+                                android:gravity="center"
+                                android:textColor="@color/negro"
+                                android:textStyle="bold"
+                                android:textSize="18sp"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/im_tec"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="8"
+                            android:src="@mipmap/ic_op_abajo"
+                            android:tint="@color/colorPrimary"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/op_tec2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="4dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="6dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="1.- Control de Balones :"
+                                android:textSize="8sp"/>
+                            <TextView
+                                android:id="@+id/res16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="10 Ptos"
+                                android:textSize="10sp"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="6dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="2.- Pases Largos y entre Lineas :"
+                                android:textSize="8sp"/>
+                            <TextView
+                                android:id="@+id/res17"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="10 Ptos"
+                                android:textSize="10sp"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="6dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="3.- Tiros Libres :"
+                                android:textSize="8sp"/>
+                            <TextView
+                                android:id="@+id/res18"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="10 Ptos"
+                                android:textSize="10sp"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="6dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="4.- Juegos y Técnica - Cabeceo :"
+                                android:textSize="8sp"/>
+                            <TextView
+                                android:id="@+id/res19"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="10 Ptos"
+                                android:textSize="10sp"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="6dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="5.- Dribbling (1 vs 1) :"
+                                android:textSize="8sp"/>
+                            <TextView
+                                android:id="@+id/res20"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="10 Ptos"
+                                android:textSize="10sp"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="6dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="6.- Técnica de Centro :"
+                                android:textSize="8sp"/>
+                            <TextView
+                                android:id="@+id/res21"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="10 Ptos"
+                                android:textSize="10sp"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/op_psi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="PSICOLOGICO"
+                                android:gravity="fill_vertical"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="@color/negro"/>
+                            <TextView
+                                android:id="@+id/ted5"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:text="10 Ptos."
+                                android:gravity="center"
+                                android:textColor="@color/negro"
+                                android:textStyle="bold"
+                                android:textSize="18sp"/>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/im_psi"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="8"
+                            android:src="@mipmap/ic_op_abajo"
+                            android:tint="@color/colorPrimary"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/op_psi2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="4dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="6dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="1.- Liderazgo en el Campo :"
+                                android:textSize="8sp"/>
+                            <TextView
+                                android:id="@+id/res22"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="10 Ptos"
+                                android:textSize="10sp"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="6dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="1.- Soporte emocioanl al Compañero :"
+                                android:textSize="8sp"/>
+                            <TextView
+                                android:id="@+id/res23"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="10 Ptos"
+                                android:textSize="10sp"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="6dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="3.- Respeto a la Autoridad y a las reglas :"
+                                android:textSize="8sp"/>
+                            <TextView
+                                android:id="@+id/res24"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="10 Ptos"
+                                android:textSize="10sp"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="6dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="4.- Capacidad de sacrificio :"
+                                android:textSize="8sp"/>
+                            <TextView
+                                android:id="@+id/res25"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="10 Ptos"
+                                android:textSize="10sp"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="8dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="TOTAL"
+                            android:gravity="fill_vertical"
+                            android:layout_marginLeft="15dp"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:textColor="@color/deep_naranja900"/>
+                        <TextView
+                            android:id="@+id/ted6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="10 Ptos."
+                            android:gravity="center"
+                            android:textColor="@color/deep_naranja900"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+        </ScrollView>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blanco">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorSecundario"
+        android:text="Prueba Fisica:"
+        android:textAlignment="center"
+        android:layout_margin="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="320dp"
+                    android:layout_height="290dp"
+                    android:backgroundTint="#00897b"
+                    android:layout_margin="4dp"
+                    android:elevation="20dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="15sp"
+                    app:cardBackgroundColor="#00897b"
+                    app:cardElevation="5dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="4dp"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Peso:"
+                                android:textSize="20dp"
+                                android:textColor="@color/blanco"
+                                android:layout_marginRight="30dp"
+                                android:textStyle="bold"/>
+
+                            <EditText
+                                android:id="@+id/e_Peso"
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:ems="5"
+                                android:hint="kg."
+                                android:inputType="numberDecimal"
+                                android:background="@drawable/rounded_border_edittext"
+                                android:gravity="center"
+                                android:maxLength="9">
+                                <requestFocus />
+                            </EditText>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="4dp"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Talla:"
+                                android:textSize="20dp"
+                                android:textColor="@color/blanco"
+                                android:layout_marginRight="32dp"
+                                android:textStyle="bold"/>
+
+                            <EditText
+                                android:id="@+id/e_talla"
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:ems="5"
+                                android:hint="mts."
+                                android:inputType="numberDecimal"
+                                android:background="@drawable/rounded_border_edittext"
+                                android:gravity="center"
+                                android:maxLength="9">
+
+                            </EditText>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="4dp"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="52dp"
+                                android:elevation="0dp"
+                                android:text="RJ:"
+                                android:textColor="@color/blanco"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/e_RJ"
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:ems="5"
+                                android:hint="cmts."
+                                android:inputType="numberDecimal"
+                                android:background="@drawable/rounded_border_edittext"
+                                android:gravity="center"
+                                android:maxLength="9">
+
+                            </EditText>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="4dp"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="35dp"
+                                android:text="CMJ:"
+                                android:textColor="@color/blanco"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/e_CMJ"
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:ems="5"
+                                android:hint="cmts."
+                                android:inputType="numberDecimal"
+                                android:background="@drawable/rounded_border_edittext"
+                                android:gravity="center"
+                                android:maxLength="9">
+
+                            </EditText>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="4dp"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ABK:"
+                                android:textSize="20dp"
+                                android:textColor="@color/blanco"
+                                android:layout_marginRight="37dp"
+                                android:textStyle="bold"/>
+
+                            <EditText
+                                android:id="@+id/e_ABK"
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:ems="5"
+                                android:hint="cmts."
+                                android:inputType="numberDecimal"
+                                android:background="@drawable/rounded_border_edittext"
+                                android:gravity="center"
+                                android:maxLength="9">
+
+                            </EditText>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="4dp"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="FMS:"
+                                android:textSize="20dp"
+                                android:textColor="@color/blanco"
+                                android:layout_marginRight="35dp"
+                                android:textStyle="bold"/>
+
+                            <EditText
+                                android:id="@+id/e_FMS"
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:ems="5"
+                                android:hint="Ptos."
+                                android:inputType="number"
+                                android:background="@drawable/rounded_border_edittext"
+                                android:gravity="center"
+                                android:maxLength="9">
+
+                            </EditText>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="4dp"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Velocidad:"
+                                android:textSize="16dp"
+                                android:textColor="@color/blanco"
+                                android:layout_marginRight="6dp"
+                                android:textStyle="bold"/>
+
+                            <EditText
+                                android:id="@+id/e_vel_s"
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:ems="5"
+                                android:hint="seg."
+                                android:inputType="numberDecimal"
+                                android:background="@drawable/rounded_border_edittext"
+                                android:gravity="center"
+                                android:maxLength="9">
+
+                            </EditText>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="4dp"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="yo-yo:"
+                                android:textSize="20dp"
+                                android:textColor="@color/blanco"
+                                android:layout_marginRight="30dp"
+                                android:textStyle="bold"/>
+
+                            <EditText
+                                android:id="@+id/e_yo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:ems="5"
+                                android:hint="palier"
+                                android:inputType="numberDecimal"
+                                android:background="@drawable/rounded_border_edittext"
+                                android:gravity="center"
+                                android:maxLength="9">
+
+                            </EditText>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="320dp"
+                    android:layout_height="160dp"
+                    android:backgroundTint="#43a047"
+                    android:layout_margin="4dp"
+                    android:elevation="20dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="15sp"
+                    app:cardBackgroundColor="#43a047">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Calcular"
+                            android:layout_margin="10dp"
+                            android:background="#1b5e20"
+                            android:textColor="@color/blanco"
+                            android:textStyle="bold"
+                            android:onClick="calcularDatos1"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="4dp"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Velocidad(Kms/Hr):"
+                                android:textSize="15dp"
+                                android:textColor="@color/blanco"
+                                android:layout_marginRight="40dp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/re_velo1"
+                                android:text="0,00"
+                                android:textSize="15dp"
+                                android:textColor="@color/blanco"
+                                android:layout_marginRight="30dp"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="4dp"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Potencia(w):"
+                                android:textSize="15dp"
+                                android:textColor="@color/blanco"
+                                android:layout_marginRight="90dp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/re_pot1"
+                                android:text="0,00"
+                                android:textSize="15dp"
+                                android:textColor="@color/blanco"
+                                android:layout_marginRight="30dp"
+                                android:textStyle="bold"/>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="4dp"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Resistencia(Vo2Máx):"
+                                android:textSize="15dp"
+                                android:textColor="@color/blanco"
+                                android:layout_marginRight="26dp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/re_resis1"
+                                android:text="0,00"
+                                android:textSize="15dp"
+                                android:textColor="@color/blanco"
+                                android:layout_marginRight="30dp"
+                                android:textStyle="bold"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="320dp"
+                    android:layout_height="100dp"
+                    android:backgroundTint="#9575cd"
+                    android:layout_margin="4dp"
+                    android:elevation="20dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="15sp"
+                    app:cardBackgroundColor="#9575cd">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="4dp"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Velocidad Prom:"
+                                android:textSize="15dp"
+                                android:textColor="@color/blanco"
+                                android:layout_marginRight="65dp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/re_velo2"
+                                android:text="1000,00"
+                                android:textSize="15dp"
+                                android:textColor="@color/blanco"
+                                android:layout_marginRight="30dp"
+                                android:textStyle="bold"/>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="4dp"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Potencia Prom:"
+                                android:textSize="15dp"
+                                android:textColor="@color/blanco"
+                                android:layout_marginRight="70dp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/re_pot2"
+                                android:text="1000,00"
+                                android:textSize="15dp"
+                                android:textColor="@color/blanco"
+                                android:layout_marginRight="30dp"
+                                android:textStyle="bold"/>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="4dp"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Resistencia Prom:"
+                                android:textSize="15dp"
+                                android:textColor="@color/blanco"
+                                android:layout_marginRight="50dp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/re_resis2"
+                                android:text="1000,00"
+                                android:textSize="15dp"
+                                android:textColor="@color/blanco"
+                                android:layout_marginRight="30dp"
+                                android:textStyle="bold"/>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="320dp"
+                    android:layout_height="60dp"
+                    android:backgroundTint="#fb8c00"
+                    android:layout_margin="4dp"
+                    android:elevation="20dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="15sp"
+                    app:cardBackgroundColor="@color/deep_naranja400">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="4dp"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Puntaje Fisico:"
+                                android:textSize="15dp"
+                                android:textColor="@color/blanco"
+                                android:layout_marginRight="50dp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/re_total"
+                                android:text="1000.00"
+                                android:textSize="30dp"
+                                android:textColor="@color/blanco"
+                                android:layout_marginRight="30dp"
+                                android:textStyle="bold"/>
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <Button
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:text="GUARDAR"
+                    android:drawableLeft="@drawable/save_32"
+                    android:background="@color/fb"
+                    android:textColor="@color/ColorPrimaryDark"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:onClick="guardar_datos"
+                    android:layout_margin="10dp"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+    </ScrollView>
+
+</LinearLayout>
+

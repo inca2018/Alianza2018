@@ -1,0 +1,391 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/blanco"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            tools:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            tools:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/toolbar_boton_volver_soc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:src="@drawable/ic_boton_regresar"
+                    />
+                <TextView
+                    android:id="@+id/toolbar_titulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="EVALUACIÓN SOCIAL"
+                    android:textSize="18dp"
+                    android:textColor="@color/blanco"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:textStyle="bold"/>
+                <ImageView
+                    android:id="@+id/toolbar_boton_vaciar_soc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:src="@drawable/ic_boton_vaciar_datos"
+                    />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/deep_naranja400"
+                android:backgroundTint="@color/deep_naranja400"
+                app:cardCornerRadius="30dp"
+                android:layout_margin="10dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="4dp">
+
+
+                    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Contenido:"
+            android:textColor="@color/blanco"
+            android:textAlignment="center"
+            android:textStyle="normal|bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textAlignment="center"
+            android:text="0 Pts"
+            android:textColor="@color/blanco"
+
+            android:textStyle="normal|bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 Pts"
+            android:textColor="@color/blanco"
+            android:layout_weight="2"
+            android:textAlignment="center"
+            android:textStyle="normal|bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 Pts"
+            android:textColor="@color/blanco"
+            android:layout_weight="2"
+            android:textAlignment="center"
+            android:textStyle="normal|bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 Pts"
+            android:textColor="@color/blanco"
+            android:layout_weight="2"
+            android:textAlignment="center"
+            android:textStyle="normal|bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blanco"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        >
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="1.- Actitud Ante el Adversario"
+            android:layout_weight="0.7"
+            android:textSize="15sp"
+            android:textColor="@color/blanco"
+            />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="horizontal"
+            android:id="@+id/rgso1">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rso10"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+                android:layout_marginRight="-30dp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rso11"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+                android:layout_marginRight="-30dp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rso12"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+                android:layout_marginRight="-30dp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+                android:layout_marginRight="-30dp"
+                android:id="@+id/rso13" />
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="2.- Actitud con Compañeros"
+            android:layout_weight="0.7"
+            android:textSize="15sp"
+            android:textColor="@color/blanco"
+            />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/rgso2"
+            android:layout_weight="4">
+            <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+                android:layout_marginRight="-30dp"
+                android:id="@+id/rso20" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+                android:layout_marginRight="-30dp"
+                android:id="@+id/rso21" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+                android:layout_marginRight="-30dp"
+                android:id="@+id/rso22" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+                android:layout_marginRight="-30dp"
+                android:id="@+id/rso23" />
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="3.- Actitud con el Arbitro"
+            android:layout_weight="0.7"
+            android:textSize="15sp"
+            android:textColor="@color/blanco"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="horizontal"
+            android:id="@+id/rgso3">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+                android:layout_marginRight="-30dp"
+                android:id="@+id/rso30" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+                android:layout_marginRight="-30dp"
+                android:id="@+id/rso31" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+                android:layout_marginRight="-30dp"
+                android:id="@+id/rso32" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+                android:layout_marginRight="-30dp"
+                android:id="@+id/rso33" />
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="4.- Actitud con el Público"
+            android:layout_weight="0.7"
+            android:textSize="15sp"
+            android:textColor="@color/blanco"
+            />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="horizontal"
+            android:id="@+id/rgso4">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+                android:layout_marginRight="-30dp"
+                android:id="@+id/rso40" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+                android:layout_marginRight="-30dp"
+                android:id="@+id/rso41" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+                android:layout_marginRight="-30dp"
+                android:id="@+id/rso42" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+                android:layout_marginRight="-30dp"
+                android:id="@+id/rso43" />
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blanco"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        >
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_margin="10dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/verde_bajo"
+            android:backgroundTint="@color/verde_bajo"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="2dp"
+            app:cardElevation="4dp"
+            android:layout_gravity="center">
+        <Button
+            android:id="@+id/btnSoc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/guardar"
+            android:backgroundTint="@android:color/transparent"
+            android:background="@android:color/transparent"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/blanco"
+            android:drawableRight="@drawable/ic_boton_guardar_datos"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingRight="20dp"
+
+            />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

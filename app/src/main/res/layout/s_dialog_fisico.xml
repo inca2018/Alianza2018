@@ -1,0 +1,596 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/blanco">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            tools:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            tools:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/toolbar_boton_volver_fisico"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:src="@drawable/ic_boton_regresar"
+                    />
+                <TextView
+                    android:id="@+id/toolbar_titulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="EVALUACIÓN FISICA"
+                    android:textSize="18dp"
+                    android:textColor="@color/blanco"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:textStyle="bold"/>
+                <ImageView
+                    android:id="@+id/toolbar_boton_vaciar_fisico"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:src="@drawable/ic_boton_vaciar_datos"
+                    />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/deep_naranja400"
+            android:backgroundTint="@color/deep_naranja400"
+            app:cardCornerRadius="30dp"
+            android:layout_margin="10dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="4dp">
+
+
+                <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        >
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Contenido:"
+            android:textStyle="normal|bold"
+            android:textColor="@color/blanco"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="0 Pts"
+            android:textStyle="normal|bold"
+            android:textColor="@color/blanco"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="1 Pts"
+            android:textStyle="normal|bold"
+            android:textColor="@color/blanco"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="2 Pts"
+            android:textStyle="normal|bold"
+            android:textColor="@color/blanco"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="3 Pts"
+            android:textStyle="normal|bold"
+            android:textColor="@color/blanco"
+            android:textAlignment="center"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blanco"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        >
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="1.- Estatura Según Posición"
+            android:textColor="@color/blanco"
+            android:layout_weight="0.7"
+            android:textSize="12sp"
+            />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="horizontal"
+            android:id="@+id/fis1g">
+
+            <RadioButton
+                android:id="@+id/fis1g0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+                android:layout_marginRight="-30dp"
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fis1g1"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+
+                android:layout_marginRight="-30dp"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fis1g2"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+
+                android:layout_marginRight="-30dp"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fis1g3"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+
+                android:layout_marginRight="-30dp"
+                />
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="2.- Peso Según Posicion"
+            android:textColor="@color/blanco"
+            android:layout_weight="0.7"
+            android:textSize="12sp"
+
+            />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="horizontal"
+            android:id="@+id/fis2g">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fis2g0"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+                android:layout_marginRight="-30dp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fis2g1"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+
+                android:layout_marginRight="-30dp"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fis2g2"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+
+                android:layout_marginRight="-30dp"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fis2g3"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+
+                android:layout_marginRight="-30dp"
+                />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+        <TextView
+            android:layout_width="100dp"
+            android:textColor="@color/blanco"
+            android:layout_height="match_parent"
+            android:text="3.- Técnica de Carrera"
+            android:layout_weight="0.7"
+            android:textSize="12sp"
+            />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/fis3g"
+            android:layout_weight="4"
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fis3g0"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+
+                android:layout_marginRight="-30dp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fis3g1"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+
+                android:layout_marginRight="-30dp"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fis3g2"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+
+                android:layout_marginRight="-30dp"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fis3g3"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+
+                android:layout_marginRight="-30dp"
+                />
+        </RadioGroup>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+        <TextView
+            android:layout_width="100dp"
+            android:textColor="@color/blanco"
+            android:layout_height="match_parent"
+            android:text="4.- Posicíon del Talón"
+            android:layout_weight="0.7"
+            android:textSize="12sp"
+            />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/fis4g"
+            android:layout_weight="4">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fis4g0"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+
+                android:layout_marginRight="-30dp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fis4g1"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+
+                android:layout_marginRight="-30dp"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fis4g2"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+
+                android:layout_marginRight="-30dp"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fis4g3"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+
+                android:layout_marginRight="-30dp"
+                />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+        <TextView
+            android:layout_width="100dp"
+            android:textColor="@color/blanco"
+            android:layout_height="match_parent"
+            android:text="5.- Aceleracíon"
+            android:layout_weight="0.7"
+            android:textSize="12sp"
+            />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/fis5g"
+            android:layout_weight="4">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fis5g0"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+
+                android:layout_marginRight="-30dp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fis5g1"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+
+                android:layout_marginRight="-30dp"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fis5g2"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+
+                android:layout_marginRight="-30dp"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fis5g3"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+
+                android:layout_marginRight="-30dp"
+                />
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="6.- Potencia"
+            android:textColor="@color/blanco"
+            android:layout_weight="0.7"
+            android:textSize="12sp"
+            />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/fis6g"
+            android:layout_weight="4">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fis6g0"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+
+                android:layout_marginRight="-30dp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fis6g1"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+
+                android:layout_marginRight="-30dp"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fis6g2"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+
+                android:layout_marginRight="-30dp"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fis6g3"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+
+                android:layout_marginRight="-30dp"
+                />
+        </RadioGroup>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="7.- Resistencia"
+            android:textColor="@color/blanco"
+            android:layout_weight="0.7"
+            android:textSize="12sp"
+            />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/fis7g"
+            android:layout_weight="4"
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fis7g0"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+
+                android:layout_marginRight="-30dp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fis7g1"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+
+                android:layout_marginRight="-30dp"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fis7g2"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+
+                android:layout_marginRight="-30dp"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fis7g3"
+                android:layout_weight="0.01"
+                android:buttonTint="@color/blanco"
+
+                android:layout_marginRight="-30dp"
+                />
+        </RadioGroup>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blanco"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        >
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_margin="10dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/verde_bajo"
+            android:backgroundTint="@color/verde_bajo"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="5dp"
+            app:cardElevation="4dp"
+            android:layout_gravity="center">
+        <Button
+            android:id="@+id/btnfisicograbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:text="GUARDAR"
+            android:backgroundTint="@android:color/transparent"
+            android:background="@android:color/transparent"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/blanco"
+            android:drawableRight="@drawable/ic_boton_guardar_datos"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingRight="25dp"
+            />
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

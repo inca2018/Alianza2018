@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="inca.jesus.alianza17.Fragments.FragmentSeguimiento">
+    <LinearLayout
+        android:id="@+id/linea_lista_postulantes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_deportistas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linea_lista_evaluaciones2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_evaluaciones2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </android.support.v7.widget.RecyclerView>
+        <LinearLayout
+            android:id="@+id/panel_vacio_k"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ColorAccent"
+                android:text="Aún no tiene Evaluaciones Registradas!"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/anterior_boton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:text="Anterior"
+            android:background="@color/blue"
+            android:textColor="@color/blanco"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/panel_vacio_kk"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Aún no tiene Postulantes Registrados!"
+            android:textColor="@color/ColorAccent"
+            android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>
